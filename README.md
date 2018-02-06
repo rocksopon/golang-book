@@ -1,4 +1,4 @@
-# Go Book
+# Go Book :)
 
 **Name:** *Sopon Jam*
 
@@ -10,6 +10,7 @@
 
 * Chapter 2.1 : My 1st Program
 * Chapter 2.2 : My 2nd Program
+* Chapter 2.3 : My 3rd Program
 
 ## Chapter 3
 
