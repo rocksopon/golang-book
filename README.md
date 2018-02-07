@@ -13,4 +13,6 @@
 
 ## Chapter 3
 
+* Chapter 3.1 : Zero Value Program
+
 ## Chapter 4
