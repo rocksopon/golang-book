@@ -15,5 +15,6 @@
 
 * Chapter 3.1 : Zero Value Program
 * Chapter 3.2 : String Program
+* Chapter 3.3 : Floating Program
 
 ## Chapter 4
