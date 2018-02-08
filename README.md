@@ -19,4 +19,4 @@
 
 ## Chapter 4
 * Chapter 4.1 : Variables Program
-* Chapter 4.2 : Variables and Input Program
+* Chapter 4.2 : Farenheit to Celsius Program
