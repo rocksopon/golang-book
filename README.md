@@ -23,4 +23,5 @@
 
 ## Chapter 5
 * Chapter 5.1 : For-Loop Program
+* Chapter 5.2 : FizzBuzz using for loop Program
 
