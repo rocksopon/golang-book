@@ -24,4 +24,6 @@
 ## Chapter 5
 * Chapter 5.1 : For-Loop Program
 * Chapter 5.2 : FizzBuzz using for loop Program
+* Chapter 5.3 : Switch Program
+* Chapter 5.4 : Random Number and Input Program
 
