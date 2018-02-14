@@ -42,3 +42,4 @@
 * Chapter 7.5 : Map Program
 * Chapter 7.6 : Map (with Delete syntax) Program
 * Chapter 7.7 : Map (with checking values in Map) Program
+* Chapter 7.7 : Array with Range Program
