@@ -38,3 +38,5 @@
 * Chapter 7.1 : Collection (Array and Slice) Program
 * Chapter 7.2 : Collection (Array and Slice) Program
 * Chapter 7.3 : Create slice from array Program
+* Chapter 7.4 : Slice Program
+* Chapter 7.5 : Map Program
