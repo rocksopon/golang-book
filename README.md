@@ -27,3 +27,5 @@
 * Chapter 5.3 : Switch Program
 * Chapter 5.4 : Random Number and Input Program
 
+## Chapter 6
+* Chapter 6.1 : Function Basic Program
