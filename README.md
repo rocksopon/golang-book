@@ -41,3 +41,4 @@
 * Chapter 7.4 : Slice Program
 * Chapter 7.5 : Map Program
 * Chapter 7.6 : Map (with Delete syntax) Program
+* Chapter 7.7 : Map (with checking values in Map) Program
