@@ -40,3 +40,4 @@
 * Chapter 7.3 : Create slice from array Program
 * Chapter 7.4 : Slice Program
 * Chapter 7.5 : Map Program
+* Chapter 7.6 : Map (with Delete syntax) Program
