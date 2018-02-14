@@ -1,25 +1,27 @@
 package main
 
 import (
-
+	"strconv"
 	"fmt"
 )
 
 func main() {
 	
 	for number := 1 ; number <=100 ; number++ {
-		fmt.Println(fizzBuzz(number))
+		fmt.Println(number, fizzBuzz(number))
 	}
 }
 
-func fizzBuzz(number int) (int,string) {
+func fizzBuzz(number int) string {
+	var str string
 	if number%15 == 0 {
-		return  number," is FizzBuzz"
+		str =  "is FizzBuzz"
 	}else if number%3 == 0 {
-		return  number," is Fizz"
+		str =  "is Fizz"
 	}else if number%5 == 0 {
-		return  number," is Buzz"
+		str =  "is Buzz"
 	}else {
-		return number," is not Fizz, Buzz or FizzBuzz"
+		str =  strconv.Itoa(number)
 	}
+	return str
 }
