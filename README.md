@@ -33,3 +33,8 @@
 * Chapter 6.3 : Function with return many values Program
 * Chapter 6.4 : Function with multiple args Program
 * Chapter 6.5 : FizzBuzz using function Program
+
+## Chapter 7
+* Chapter 7.1 : Collection (Array and Slice) Program
+* Chapter 7.2 : Collection (Array and Slice) Program
+* Chapter 7.3 : Create alice from array Program
