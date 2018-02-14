@@ -29,3 +29,4 @@
 
 ## Chapter 6
 * Chapter 6.1 : Function Basic Program
+* Chapter 6.2 : Function with return Program
