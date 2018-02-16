@@ -24,9 +24,10 @@ func weatherCelcius(celcius int, description string) {
 		if valueStr == "2" {
 			fmt.Println(two)
 		}else if  valueStr == "5" {
-			fmt.Println(five)
+			fmt.Print(five)
 		}
 	}
+	fmt.Println("c")
 	fmt.Println(description)
 }
 
