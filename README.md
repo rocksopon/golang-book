@@ -45,4 +45,4 @@
 * Chapter 7.8 : Array with Range Program
 * Chapter 7.9 : Slice with Range Program
 * Chapter 7.10 : Map with Range Program
-* Chapter 7.10 : String with Range Program
+* Chapter 7.11 : String with Range Program
