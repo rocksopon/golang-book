@@ -46,3 +46,6 @@
 * Chapter 7.9 : Slice with Range Program
 * Chapter 7.10 : Map with Range Program
 * Chapter 7.11 : String with Range Program
+
+## Exercise
+* Exercise 1 : Console Weather Program
