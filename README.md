@@ -49,3 +49,4 @@
 
 ## Exercise
 * Exercise 1 : Console Weather Program
+* Test
