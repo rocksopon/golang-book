@@ -47,6 +47,9 @@
 * Chapter 7.10 : Map with Range Program
 * Chapter 7.11 : String with Range Program
 
+## Chapter 8
+* Chapter 8.1 : (Pointer) Pass by copy value Program
+
 ## Exercise
 * Exercise 1 : Console Weather Program
 * Test
