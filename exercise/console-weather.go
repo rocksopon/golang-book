@@ -1,4 +1,4 @@
-package main
+/*package main
 
 import (
 	//"strconv"
@@ -46,6 +46,6 @@ func weatherCelcius(celcius int, description string) string{
 	}
 	fmt.Println("c")
 	fmt.Println(description)
-*/
-}
+
+}*/
 
