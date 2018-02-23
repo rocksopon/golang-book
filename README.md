@@ -49,6 +49,21 @@
 
 ## Chapter 8
 * Chapter 8.1 : (Pointer) Pass by copy value Program
+* Chapter 8.2 : (Pointer) Pass by pointer Program
+* Chapter 8.3 : (Pointer) Pass by Array Program
+* Chapter 8.4 : (Pointer) Pass by Array(Pointer) Program
+* Chapter 8.5 : (Pointer) Pass by Slice Program
+* Chapter 8.6 : (Pointer) Pass by Map Program
+
+## Chapter 9
+* Chapter 9.1 : Struct Program
+* Chapter 9.2 : Struct Program
+
+## Chapter 10
+* Chapter 10.1 : Method Program
+
+## Chapter 11
+* Chapter 11.1 : Interface Program
 
 ## Exercise
 * Exercise 1 : Console Weather Program
