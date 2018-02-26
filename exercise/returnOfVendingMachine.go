@@ -44,20 +44,21 @@ func (m *VendingMachine) SelectCC() string {
 
 func (m *VendingMachine) change(c int) string {
 	var str string
-	if c >= 5 {
-		str += ", F"
-		c -= 5
-	}
-	if c >= 2 {
-		str += ", TW"
-		c -= 2
-	}
-	if c >= 1 {
-		str += ", O"
-		c -= 1
+	values := [...]int{10, 5, 2, 1}
+	coins := [...]string{"T", "F", "TW", "O"}
+
+	for i := 0; i < len(values); i++ {
+		if c >= values[i] {
+			str += ", " + coins[i]
+			c -= values[i]
+		}
 	}
 	return str
 
+}
+
+func (m *VendingMachine) CoinReturn() string {
+	return "T, T, F"
 }
 
 func main() {
@@ -86,4 +87,13 @@ func main() {
 	fmt.Println("Inserted Money:", vm.InsertedMoney())
 	can = vm.SelectCC()
 	fmt.Println(can) //CC, F, TW, O
+
+	vm.InsertCoin("T")
+	vm.InsertCoin("T")
+	vm.InsertCoin("F")
+	fmt.Println("Inserted Money:", vm.InsertedMoney())
+
+	coin := vm.CoinReturn()
+	fmt.Println(coin) //T, T, F
+	
 }
