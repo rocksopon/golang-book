@@ -6,6 +6,7 @@ import (
 
 type VendingMachine struct {
 	insertedMoney int
+	coins map[string]int
 
 }
 
@@ -14,7 +15,8 @@ func (m VendingMachine) InsertedMoney() int {
 }
 
 func (m *VendingMachine) InsertCoin(coin string) {
-	if coin == "T" {
+	m.insertedMoney += m.coins[coin]
+	/*if coin == "T" {
 		m.insertedMoney += 10
 	} else if coin == "F" {
 		m.insertedMoney += 5
@@ -22,14 +24,16 @@ func (m *VendingMachine) InsertCoin(coin string) {
 		m.insertedMoney += 2
 	} else if coin == "O" {
 		m.insertedMoney += 1
-	}
+	}*/
 }
 
 func main() {
-	vm := VendingMachine{}
+	var coins = map[string]int{"T": 1, "F": 5, "TW":2, "O":1}
+	vm := VendingMachine{coins: coins}
 	fmt.Println("Inserted Money:", vm.InsertedMoney())
 
 	vm.InsertCoin("T")
 	vm.InsertCoin("F")
+	vm.InsertCoin("TW")
 	fmt.Println("Inserted Money:", vm.InsertedMoney())
 }
