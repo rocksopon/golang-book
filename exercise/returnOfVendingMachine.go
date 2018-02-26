@@ -51,14 +51,17 @@ func (m *VendingMachine) change(c int) string {
 		if c >= values[i] {
 			str += ", " + coins[i]
 			c -= values[i]
+			i--
 		}
 	}
 	return str
 
 }
 
-func (m *VendingMachine) CoinReturn() string {
-	return "T, T, F"
+func (vm *VendingMachine) CoinReturn() string {
+	coins := vm.change(vm.insertedMoney)
+	vm.insertedMoney = 0
+	return coins[2:len(coins)]
 }
 
 func main() {
