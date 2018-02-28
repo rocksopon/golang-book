@@ -7,11 +7,15 @@ import (
 type NewVendingMachine struct {
 	coins int
 	items string
+	coinsReturnInt int
+	priceSD int
+	priceCC int
 }
 
 func main() {
 	vm := NewVendingMachine{}
 
+	// Buy SD(soft drink) with exact change
 	vm.InsertCoin("T")
 	vm.InsertCoin("F")
 	vm.InsertCoin("TW")
@@ -19,7 +23,22 @@ func main() {
 	fmt.Println("Inserted Money:", vm.GetInsertedMoney())
 
 	can := vm.SelectSD()
-	fmt.Println(can)
+	fmt.Println(can) //SD
+
+	// Buy CC(canned coffee) without exact change
+	vm.InsertCoin("T")
+	vm.InsertCoin("T")
+	fmt.Println("Inserted Money:", vm.GetInsertedMoney()) // 20
+	can = vm.SelectCC()
+	fmt.Println(can) // CC, F, TW, O
+
+	// Start adding change but hit coin return
+	vm.InsertCoin("T")
+	vm.InsertCoin("T")
+	vm.InsertCoin("F")
+	fmt.Println("Inserted Money:", vm.GetInsertedMoney()) // 25
+	change := vm.CoinReturn()
+	fmt.Println(change) // T, T, F 
 }
 
 func (n *NewVendingMachine) InsertCoin(coins string) {
@@ -39,15 +58,36 @@ func (n *NewVendingMachine) GetInsertedMoney() int {
 }
 
 func (n *NewVendingMachine) SelectSD() string {
-	return "SD"
+	n.priceSD = 18
+	n.coinsReturnInt = n.coins - n.priceSD
+	ReturnCoin := n.CoinReturn()
+	return "SD" + ReturnCoin
 }
 
 func (n *NewVendingMachine) SelectCC() string {
-	return "CC"
+	n.priceCC = 12
+	n.coinsReturnInt = n.coins - n.priceCC
+	ReturnCoin := n.CoinReturn()
+	return "CC" + ReturnCoin
 }
 
 func (n *NewVendingMachine) CoinReturn() string {
-	return "SD"
+
+	for i := 1; i <= (n.coinsReturnInt/10); i++ {
+		fmt.Print("T ")
+	}
+
+	if n.coinsReturnInt % 10 == 5 {
+		fmt.Print("F ")
+	} else if n.coinsReturnInt % 10 == 2 {
+		fmt.Print("TW")
+	} else if n.coinsReturnInt % 10 == 1 {
+		fmt.Print("O")
+	}
+
+	// Reset n.coins
+	n.coins = 0
+	return ""
 }
 
 
